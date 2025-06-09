@@ -33,3 +33,15 @@ And stretch farther right on PC1 up to ~6 (big EC/nutrient spikes).
 
 
 <img width="635" alt="Screen Shot 2025-06-09 at 9 59 16 AM" src="https://github.com/user-attachments/assets/645576cc-c66b-43e1-8784-931f2361d8c2" />
+
+What you’re looking at:
+
+Each horizontal box shows how one sensor feature spreads after z-scoring (mean = 0, std = 1).
+
+Orange line = median (50% of readings are above, 50% below).
+
+Box edges = 25th & 75th percentiles (middle 50% of data).
+
+Whiskers stretch to “typical” extremes (~1.5 × IQR beyond the box).
+
+Circles beyond whiskers are outliers—values way outside the normal range.
