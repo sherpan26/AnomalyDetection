@@ -1,13 +1,17 @@
 Soil Anomaly Detection System
+
 This project implements a sophisticated two-layer anomaly detection system for agricultural soil sensor data. It is designed to identify and flag a wide range of abnormalities, from critical threshold breaches to subtle statistical deviations, providing a comprehensive assessment of soil health conditions.
 
 System Architecture
+
 The system uses a multi-layered approach to analyze sensor data, ensuring both high sensitivity and high confidence in its findings. Each data point is processed sequentially through two distinct analytical layers.
 
 Layer 1: Rule-Based Filter
+
 This layer acts as the first line of defense, using a set of expert-defined rules to check for clear violations. It can detect both critical point anomalies (e.g., a dangerously low pH) and contextual anomalies that depend on the time of year or day (e.g., abnormally low moisture for the growing season).
 
 Layer 2: Statistical Anomaly Engine
+
 This layer looks for patterns and behaviors that are statistically unusual, even if no hard rules have been broken. It uses a Z-score algorithm over a sliding window of recent data to identify sudden spikes, gradual drifts, or any other significant deviation from the established norm.
 
 Features
