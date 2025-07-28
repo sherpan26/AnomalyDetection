@@ -1,16 +1,16 @@
-#Soil Anomaly Detection System
+# Soil Anomaly Detection System
 
 This project implements a sophisticated two-layer anomaly detection system for agricultural soil sensor data. It is designed to identify and flag a wide range of abnormalities, from critical threshold breaches to subtle statistical deviations, providing a comprehensive assessment of soil health conditions.
 
-#System Architecture
+# System Architecture
 
 The system uses a multi-layered approach to analyze sensor data, ensuring both high sensitivity and high confidence in its findings. Each data point is processed sequentially through two distinct analytical layers.
 
-#Layer 1: Rule-Based Filter
+# Layer 1: Rule-Based Filter
 
 This layer acts as the first line of defense, using a set of expert-defined rules to check for clear violations. It can detect both critical point anomalies (e.g., a dangerously low pH) and contextual anomalies that depend on the time of year or day (e.g., abnormally low moisture for the growing season).
 
-#Layer 2: Statistical Anomaly Engine
+# Layer 2: Statistical Anomaly Engine
 
 This layer looks for patterns and behaviors that are statistically unusual, even if no hard rules have been broken. It uses a Z-score algorithm over a sliding window of recent data to identify sudden spikes, gradual drifts, or any other significant deviation from the established norm.
 
@@ -25,27 +25,27 @@ Comprehensive Data Handling: Includes scripts to prepare and clean raw data, ens
 
 Robust Testing: Validated using multiple synthetic datasets designed to test various normal and anomalous scenarios.
 
-#File Structure
+# File Structure
 ├── soil_rules.csv              
-# Contains all expert rules for Layer 1.
+Contains all expert rules for Layer 1.
 
 ├── layer1.py                   
-# Implements the rule-based detection logic.
+Implements the rule-based detection logic.
 
 ├── layer2.py                  
-# Implements the statistical (Z-score) detection logic.
+Implements the statistical (Z-score) detection logic.
 
 ├── prepare_data.py             
-# Script to clean and format raw data for analysis.
+Script to clean and format raw data for analysis.
 
 ├── prepared_data.csv           
-# The clean, analysis-ready data file.
+The clean, analysis-ready data file.
 
 ├── run.py                      
-# The main script to execute the full detection pipeline.
+The main script to execute the full detection pipeline.
 
 └── README.md                  
-# This documentation file.
+This documentation file.
 
 How It Works
 The main script, run.py, orchestrates the analysis by processing each row of the dataset according to the following logic:
