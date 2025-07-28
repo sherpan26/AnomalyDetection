@@ -26,15 +26,27 @@ Comprehensive Data Handling: Includes scripts to prepare and clean raw data, ens
 Robust Testing: Validated using multiple synthetic datasets designed to test various normal and anomalous scenarios.
 
 #File Structure
-.**
-├── soil_rules.csv              # Contains all expert rules for Layer 1.
-├── layer1.py                   # Implements the rule-based detection logic.
-├── layer2.py                   # Implements the statistical (Z-score) detection logic.
-├── prepare_data.py             # Script to clean and format raw data for analysis.
-├── prepared_data.csv           # The clean, analysis-ready data file.
-├── run.py                      # The main script to execute the full detection pipeline.
-└── README.md                   # This documentation file.
-**
+├── soil_rules.csv              
+# Contains all expert rules for Layer 1.
+
+├── layer1.py                   
+# Implements the rule-based detection logic.
+
+├── layer2.py                  
+# Implements the statistical (Z-score) detection logic.
+
+├── prepare_data.py             
+# Script to clean and format raw data for analysis.
+
+├── prepared_data.csv           
+# The clean, analysis-ready data file.
+
+├── run.py                      
+# The main script to execute the full detection pipeline.
+
+└── README.md                  
+# This documentation file.
+
 How It Works
 The main script, run.py, orchestrates the analysis by processing each row of the dataset according to the following logic:
 
